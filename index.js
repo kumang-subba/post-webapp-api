@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(
   cors({
     credentials: true,
-    origin: ["https://kumang-subba.github.io", "http://localhost:3000"],
+    origin: "https://kumang-subba.github.io",
   })
 );
 app.use(cookieParser());
