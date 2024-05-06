@@ -8,6 +8,7 @@ import posts from "./routes/posts.js";
 import users from "./routes/users.js";
 import link from "./routes/link.js";
 
+const port = process.env.PORT || 8080;
 const app = express();
 
 app.use(express.json());
@@ -25,6 +26,6 @@ app.use("/api/users", users);
 app.use("/api/posts", posts);
 app.use("/api/link", link);
 
-app.listen(8080, () => {
+app.listen(port, () => {
   console.log("connected");
 });
